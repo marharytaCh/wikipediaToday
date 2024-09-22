@@ -1,0 +1,57 @@
+main {
+  .fetch-button {
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007BFF;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    overflow: hidden;
+    &:hover{
+      background-color: #0056b3;
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+      border-color: #0056b3;
+    }
+    &:focus{
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+    }
+    &:active{
+      background-color: #004085;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      transform: translateY(2px);
+    }
+    &:disabled{
+      background-color: #ccc;
+      cursor: not-allowed;
+      box-shadow: none;
+      color: #666;
+    }
+  }
+  .events-list{
+    text-align: left;
+    &__item{
+      list-style: none;
+      margin: 8px 0;
+      padding: 12px;
+      background-color: #f9f9f9;
+      border-radius: 8px;
+      font-size: 16px;
+      color: #333;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      .year{
+        font-weight: bold;
+        color: #007BFF;
+        margin-right: 8px;
+      }
+    }
+  }
+}
